@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background: url("https://as1.ftcdn.net/v2/jpg/04/85/52/44/1000_F_485524435_gqLqmPoHteMQ7cUBOUtbDnBVa2q5HZbb.jpg");
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 {
+  background: url("https://media.istockphoto.com/photos/image-of-a-spacious-coworking-office-space-picture-id1318513504");
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg2 {
+  background: url("https://as2.ftcdn.net/v2/jpg/03/58/09/17/1000_F_358091778_11yTV22iobthzXREYVCUQUcvjJxgxelp.jpg");
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg3 {
+  background: url("https://cdn.wallpapersafari.com/29/90/fLIQYr.jpg");
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg4 {
+  background: url("https://cutewallpaper.org/21/oxford-wallpapers/Oxford-University-Pictures-HD-Download-Free-Images-on-.jpg");
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg5 {
+  background: url("https://cutewallpaper.org/21/oxford-wallpapers/Oxford-University-Pictures-HD-Download-Free-Images-on-.jpg");
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: font-family: "Times New Roman", Times, serif;;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px;
+      background-color: #26457a;
+      color: white;
+    }
+    .navlinks a{
+      color: red;
+    }
+    .royalhomestar {
+      font-size: 32px;
+      color: black;
+    }
+
+    .navmenu{
+      display: flex;
+      gap: 1em;
+      font-size: 20px;
+      background-color: black;
+    }
+
+    .navmenu li:hover {
+      background-color: whitesmoke;
+      border-radius: 1px;
+
+    }
+    .navmenu li{
+      padding: 6px 15px;
+    }
+    .Categories{
+      position: relative;
+    }
+    .footer {
+  width: 100%;
+  position: relative;
+  height: 200%;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+    
+</style>
+</head>
+<body>
+<nav class = "navbar">
+    <div class="royalhomestar">
+      
+    HOMESTAR</div>
+   
+ 
+  
+  
+ 
+    <ul class="navlinks">
+      
+      <div class="navmenu">
+
+        <li><a href="homepage.html">HomePage</a></li>
+          
+        <li class="Categories">
+          <a href="browsecategories.html">Browse Categories</a>
+          
+        </li>
+        <li><a href="blog.html">Blog</li>
+        <li><a href="writeareview.html">Write A Review</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="signuppage.html">Join Us</a></li>
+        <li><a href="newslettersignup.html">Newsletter</a></li>
+      </div>
+      
+    </ul>
+    </nav>
+    <br><br>
+<div class="header" style="background-color: skyblue;">
+  <h2 >HOMESTAR BLOG</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>A Homeowner’s Guide to Plastering Costs and Process</h2>
+      <h5>Published On, 2-Jan-2021</h5>
+      <div class="fakeimg" style="height:400px;">Image</div>
+      <p></p>
+      <p style="font-size: 20px;">Whether you’re a Masterchef who prepares elaborate meals every day, a busy body who survives on weekend meal prep or someone who prefers frozen meals, everyone needs a kitchen. Your purpose or usage behind owning a well-organized kitchen may be different, but having a customized, easy-to-use, filtered to your needs kitchen can save you a lot of time every day. If a stove and oven are the heart and soul of a kitchen, cabinets are the brains that run the whole operation. Here are 5 creative ways to design your kitchen cabinets to suit your needs.
+        Kitchen islands are the informal dining area of your kitchen. They work as a breakfast table, food prep counter as well as a buffet station. You can still make the most of it by adding cabinets underneath your kitchen island. You can build big custom cabinets to store large size pots and pans, electrical appliances or even the extras that you may use only for special occasions. This way you can double your storage space without sacrificing square footage.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Build Cabinets Inside Your Kitchen Island</h2>
+      <h5>Published On, 2-Jan-2021</h5>
+      <div class="fakeimg1" style="height:400px;"></div>
+
+      <p style="font-size: 20px;">Kitchen islands are the informal dining area of your kitchen. They work as a breakfast table, food prep counter as well as a buffet station. You can still make the most of it by adding cabinets underneath your kitchen island. You can build big custom cabinets to store large size pots and pans, electrical appliances or even the extras that you may use only for special occasions. This way you can double your storage space without sacrificing square footage.Kitchen islands are the informal dining area of your kitchen. They work as a breakfast table, food prep counter as well as a buffet station. You can still make the most of it by adding cabinets underneath your kitchen island. You can build big custom cabinets to store large size pots and pans, electrical appliances or even the extras that you may use only for special occasions. This way you can double your storage space without sacrificing square footage.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Our Office</h2>
+      <div class="fakeimg2" style="height:400px;"></div>
+      <p>Our office have best classical design ever.......!</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg3" style="height:400px; font-size: 40px; font-style: oblique;">Best Office Designs</div><br>
+     
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Home Owners</h1>
+    <ul>
+      <li>Browse Categories</li>
+      <li>Write A review</li>
+      <li>Blog</li>
+      <li>Join Us</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Home Professionals</h1>
+    <ul>
+      <li>Join HomeStars</li>
+      <li>Brand Builder</li>
+      <li>Building Trust</li>
+      <li>Pro Center</li>
+      <li>Terms & Conditions</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Home Stars</h1>
+    <ul>
+      <li>Join HomeStars</li>
+      <li>Brand Builder</li>
+      <li>Building Trust</li>
+      <li>Pro Center</li>
+      <li>Terms & Conditions</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Home Stars</h1>
+    <ul>
+      <li>About Us</li>
+      <li>Privacy</li>
+      <li>Terms Of Use</li>
+      <li>Contact Us</li>
+      <li>Terms & Conditions</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-04-1024.png" width="32" style="width: 32px;"></li>
+      <li><img src="https://media.istockphoto.com/vectors/counterfriend-request-quantity-follower-notification-symbol-instagram-vector-id1094314770?s=612x612" width="32" style="width: 32px;"></li>
+      <li><img src="https://cdn1.iconfinder.com/data/icons/social-networks-15/512/facebook_social_network_logo-1024.png" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+ 
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: font-family: "Times New Roman", Times, serif;;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px;
+      background-color: #26457a;
+      color: white;
+    }
+    .navlinks a{
+      color: red;
+    }
+    .royalhomestar {
+      font-size: 32px;
+      color: black;
+    }
+
+    .navmenu{
+      display: flex;
+      gap: 1em;
+      font-size: 20px;
+      background-color: black;
+    }
+
+    .navmenu li:hover {
+      background-color: whitesmoke;
+      border-radius: 1px;
+
+    }
+    .navmenu li{
+      padding: 6px 15px;
+    }
+    .Categories{
+      position: relative;
+    }
+    
+    .bg-img {
+  /* The image used */
+      background-image: url("homepagepicture.jpg");
+
+      min-height: 380px;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      /* Needed to position the navbar */
+      position: relative;
+    }
+    .box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 160%; /* Set the width of the positioned div */
+    }
+    .buttonIn {
+            width: 1300px;
+            position: relative;
+            margin: 0;
+        }
+          
+        input {
+          position: absolute;
+            margin: 0px;
+            padding: 0px;
+            width: 24%;
+            outline: none;
+            height: 40px;
+            border-radius: 5px;
+            
+            top: 0;
+            border-radius: 5px;
+            right: 500px;
+            z-index: 2;
+            left: 600PX;
+
+        }
+          
+        button {
+            position: absolute;
+            top: 0;
+            border-radius: 5px;
+            right: 359px;
+            z-index: 2;
+            border: none;
+            top: 2px;
+            height: 37px;
+            width: 70px;
+            cursor: pointer;
+            color: white;
+            background-color: #1e90ff;
+            transform: translateX(2px);
+        }
+        .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo {
+    font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+   * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+p {
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color: #2c7bfe;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+.footer {
+  width: 100%;
+  position: relative;
+  height: 200%;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+.columnA, .columnB, .columnC {
+                float: center;
+                width: 31%;
+                padding: 75px;
+                text-align:center;
+            }
+            h1 {
+                color:skyblue;
+                text-align:center;
+            }
+             
+            /* Media query to set website layout
+            according to screen size */
+            @media screen and (max-width:600px) {
+                .columnA, .columnB, .columnC {
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width:400px) {
+                .columnA, .columnB, .columnC {
+                    width: 100%;
+                }
+            }
+  </style>
+</head>
+<body>
+  <nav class = "navbar">
+    <div class="royalhomestar">
+      
+    HOMESTAR</div>
+   
+ 
+  
+  
+ 
+    <ul class="navlinks">
+      
+      <div class="navmenu">
+
+        <li><a href="homepage.html">HomePage</a></li>
+          
+        <li class="Categories">
+          <a href="browsecategories.html">Browse Categories</a>
+          
+        </li>
+        <li><a href="blog.html">Blog</li>
+        <li><a href="writeareview.html">Write A Review</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="signuppage.html">Join Us</a></li>
+        <li><a href="newslettersignup.html">Newsletter</a></li>
+      </div>
+      
+    </ul>
+    </nav>
+    <div class="bg-img">
+  
+        <div class="text">
+            <br>
+            <br>
+            <br>
+            <h1 style="text-align: center; color: white;">Get matched with local pros for<br>your next home project.</h1>
+            <br><br><br>
+            <h2 style="text-align: center; color: white;">Quickly get quotes from verified and reviewed pros</h2>
+            <p style="text-align: center;"><div class="buttonIn">
+             <p style="text-align: center;"> <input type="text" id="enter"></p>
+              <p style="text-align: center;"><button id="clear"><a href="getquote.html">Get Quote</a></button></p>
+            </div></p>
+        </div>
+      
+      
+    </div>
+    <section>
+      <div class="row">
+        <h2 class="section-heading">Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3>Appliancess Repair</h3>
+            <p>
+              We repair all appliances in your home. Whatever it is. Service on your door step.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-brush"></i>
+            </div>
+            <h3>Plumbing Repair</h3>
+            <p>
+              We repair all appliances in your home. Whatever it is. Service on your door step.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3>Electric Repair</h3>
+            <p>
+              We repair all appliances in your home. Whatever it is. Service on your door step.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-truck-pickup"></i>
+            </div>
+            <h3>Moving Services</h3>
+            <p>
+              We repair all appliances in your home. Whatever it is. Service on your door step.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Roofing Repair</h3>
+            <p>
+              We repair all appliances in your home. Whatever it is. Service on your door step.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>Heating and Cooling</h3>
+            <p>
+              We repair all appliances in your home. Whatever it is. Service on your door step.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class = "row">
+             
+            <div class = "columnA">
+                <h1>Office #01</h1>
+                 
+ 
+                <img src="https://free4kwallpapers.com/uploads/originals/2015/10/11/well-furnished-office-wallpaper.jpg" width="440px" height="300px">
+ 
+ 
+            </div>
+             
+            <div class = "columnB">
+                <h1>Office #02</h1>
+                <img src="https://free4kwallpapers.com/uploads/originals/2015/09/11/interior-office-design.jpg
+ 
+" width="440px" height="300px">
+ 
+                 
+ 
+ 
+            </div>
+             
+            <div class = "columnC">
+                <h1>Office #03</h1>
+                  <img src="https://free4kwallpapers.com/uploads/originals/2015/09/11/desktop-office.jpg
+ 
+" width="440px" height="300px">
+ 
+ 
+
+ 
+
+ 
+ 
+            </div>
+        </div>
+ 
+
+    <div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Home Owners</h1>
+    <ul>
+      <li>Browse Categories</li>
+      <li>Write A review</li>
+      <li>Blog</li>
+      <li>Join Us</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Home Professionals</h1>
+    <ul>
+      <li>Join HomeStars</li>
+      <li>Brand Builder</li>
+      <li>Building Trust</li>
+      <li>Pro Center</li>
+      <li>Terms & Conditions</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Home Stars</h1>
+    <ul>
+      <li>Join HomeStars</li>
+      <li>Brand Builder</li>
+      <li>Building Trust</li>
+      <li>Pro Center</li>
+      <li>Terms & Conditions</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Home Stars</h1>
+    <ul>
+      <li>About Us</li>
+      <li>Privacy</li>
+      <li>Terms Of Use</li>
+      <li>Contact Us</li>
+      <li>Terms & Conditions</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-04-1024.png" width="32" style="width: 32px;"></li>
+      <li><img src="https://media.istockphoto.com/vectors/counterfriend-request-quantity-follower-notification-symbol-instagram-vector-id1094314770?s=612x612" width="32" style="width: 32px;"></li>
+      <li><img src="https://cdn1.iconfinder.com/data/icons/social-networks-15/512/facebook_social_network_logo-1024.png" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+
+</body>
+</html>
